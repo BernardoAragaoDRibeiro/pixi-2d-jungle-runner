@@ -75,7 +75,7 @@ export class Game {
     this.app.stage.addChild(this.scoreText);
 
     this.highScoreText = new Text({
-      text: "Score: 0",
+      text: `Best: ${this.highScore}`,
       style: { fill: "#f5a623", fontSize: 20, fontFamily: "monospace" },
     });
     this.highScoreText.anchor.set(1, 0);
@@ -93,7 +93,6 @@ export class Game {
     this.app.stage.addChild(this.messageText);
 
     window.addEventListener("keydown", this.handleInput);
-    this.app.ticker.add(this.update);
     window.addEventListener("pointerdown", this.handlePointer);
     this.app.ticker.add(this.update);
   }
