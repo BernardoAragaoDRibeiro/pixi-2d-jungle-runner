@@ -31,7 +31,6 @@ export class ObstacleManager {
       obstacle.update(delta, speed);
     }
 
-    const before = this.obstacles.length;
     this.obstacles = this.obstacles.filter((o) => {
       if (o.isOffScreen()) {
         this.view.removeChild(o.view);
