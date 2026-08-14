@@ -8,7 +8,7 @@
 
 Endless runner built with PixiJS 8, React and TypeScript.
 
-[▶ Play online](https://SEU-LINK-AQUI.vercel.app)
+[▶ Play online](https://pixi-2d-jungle-runner-three.vercel.app/)
 
 ![Gameplay](screenshot.gif)
 
